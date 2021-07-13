@@ -8,3 +8,22 @@
   2. I did not understand the intricacies that behave revoles around. I solved this one by reading the PyTest documentation. 
 
 ### I will be continuing to bring this project to a runnable state. Currently, it opens a web site successfully. Otherwise, it fails as fast as it loads.
+
+### Setup instructions:
+
+System Requirements:
+   Python 3.7.3, selenium, behave
+  
+  - I ran this within a virtual environment. 
+  
+Application layer:
+
+. Open helper/fixtures.py and put your local chromedriver's path within the quotes.
+
+
+
+## Areas to improve:
+ - Extract the hardcoded setup values to an external file.
+ - Incorporate openpyxl and extract all test data to spreadsheets.
+ - Have the page objects handle the driver instance so that the step definitions are easily readable.
+ - Finish the test cases and have it complete the scenario runs.
