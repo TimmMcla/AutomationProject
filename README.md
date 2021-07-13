@@ -19,8 +19,11 @@ Application dependencies:
   
 Application layer:
 
-. Open helper/fixtures.py and put your local chromedriver's path within the quotes.
+1. Open helper/fixtures.py and put your local chromedriver's path within the quotes.
+2. Create a setup.cfg file in the main directory and paste this into the file:
+            `[Environment]
 
+            Browser = chrome`
 
 
 ## Areas to improve:
@@ -28,3 +31,4 @@ Application layer:
  - Incorporate openpyxl and extract all test data to spreadsheets.
  - Have the page objects handle the driver instance so that the step definitions are easily readable.
  - Finish the test cases and have it complete the scenario runs.
+ - Expand the browsers tested to include the major versions of Edge, Firefox, and Safari
