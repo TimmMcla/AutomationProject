@@ -11,7 +11,8 @@
 
 ### Setup instructions:
 
-System Requirements:
+Application dependencies:
+
    Python 3.7.3, selenium, behave
   
   - I ran this within a virtual environment. 
