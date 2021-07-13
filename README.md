@@ -1,6 +1,6 @@
 # Automation Prototype
 
-## This is a prototype to spin up a local automation framework to test a website's login functionality using Python, Selenium, and Behave.
+## This is a prototype to test a website's login functionality using Python, Selenium, and Behave.
 
 ### I ran into some problems while trying to get this prototype up and running...
   1. Prior to this experiment, my knowledge of Python was extremely limited.
