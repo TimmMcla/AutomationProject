@@ -21,9 +21,10 @@ Application layer:
 
 1. Open helper/fixtures.py and put your local chromedriver's path within the quotes.
 2. Create a setup.cfg file in the main directory and paste this into the file:
-            `[Environment]
 
-            Browser = chrome`
+            [ Environment ]
+
+            Browser = chrome
 
 
 ## Areas to improve:
