@@ -9,11 +9,10 @@ from helper.fixtures import get_browser
 
 def before_all(context):
     config = ConfigParser()
-    print((os.path.join(os.getcwd(), 'setup.cfg')))
-    my_file = (os.path.join(os.getcwd(), 'setup.cfg'))
-    config.read(my_file)
+    my_config_file = (os.path.join(os.getcwd(), 'setup.cfg'))
+    config.read(my_config_file)
 
-    browser = get_browser(config.get('Environment', 'Browser'))
+    browser = get_browser(config.get('Environment', 'Browser'), config.get('Environment', 'Location'))
     context.driver = browser
 
 def after_all(context):

@@ -1,7 +1,7 @@
 from selenium import webdriver
-from helper.driver_helper import DriverHelper
+from helper.page import Page
 
 
-def get_browser(browser):
+def get_browser(browser, location):
     if browser == "chrome":
-        return DriverHelper(webdriver.Chrome(""))
+        return Page(webdriver.Chrome(location))

@@ -1,9 +1,9 @@
-from helper.driver_helper import DriverHelper
+from helper.page import Page
 from locators.locators import LoginPageLocators
 
 
 
-class LoginPage():
+class LoginPage(Page):
 
     def __init__(self):
         self.email_txtbox = LoginPageLocators.email_field
@@ -12,10 +12,10 @@ class LoginPage():
 
 
     def enter_email(self, email):
-        DriverHelper.find_by_selector(LoginPageLocators.email_field).sendKeys(email)
+        self.find_by_selector(LoginPageLocators.email_field).sendKeys(email)
 
     def enter_password(self, password):
-        DriverHelper.find_by_selector(LoginPageLocators.password_field).sendKeys(password)
+        self.find_by_selector(LoginPageLocators.password_field).sendKeys(password)
 
     def click_login(self):
-        DriverHelper.find_by_selector(LoginPageLocators.login_button).click()    
+        self.find_by_selector(LoginPageLocators.login_button).click()    

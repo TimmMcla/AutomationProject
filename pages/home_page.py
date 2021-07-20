@@ -1,15 +1,15 @@
-from helper.driver_helper import DriverHelper
+from helper.page import Page
 from locators.locators import HomePageLocators
 
-class HomePage(object):
+
+class HomePage(Page):
     
-    def __init__(self, driver):
+    def __init__(self):
         self.login_btn = HomePageLocators.login_button
-        self.driver = driver
 
 
     def click_login(self):
-        self.driver(self.login_btn).click
+        self.find_by_selector(HomePageLocators.login_button).click()
 
 
 

@@ -1,4 +1,4 @@
-from helper.driver_helper import DriverHelper
+from helper.page import Page
 from selenium import webdriver
 import os
 from configparser import ConfigParser
@@ -17,19 +17,19 @@ def step_impl(context):
 
 @step("user clicks on the Login button")
 def step_impl(context):
-    homePage = HomePage(context)
+    homePage = HomePage
     homePage.click_login
  
 
 @when("user is taken to the Login page")
-def step_impl(context):
-   assert context.driver.current_url(), "https://www.hudl.com/login"
+def step_impl():
+   assert Page.current_url(), "https://www.hudl.com/login"
 
 @step("user enters their valid credentials")
-def step_impl(context):
-    loginPage.enter_email(loginPage, "")
-    loginPage.enter_password(loginPage, "")
-    context.driver.find_by_selector("")
+def step_impl(username, password):
+    loginPage.enter_email(loginPage, username)
+    loginPage.enter_password(loginPage, password)
+
 
 
 
