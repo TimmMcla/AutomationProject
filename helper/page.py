@@ -13,7 +13,7 @@ class Page(object):
         self.driver = driver
 
     def open(self, url):
-        self.driver.get(url)
+        self.open(url)
 
     def current_url(self):
         self.driver.current_url()
