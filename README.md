@@ -21,10 +21,11 @@ Application layer:
             [ Environment ]
 
             Browser = chrome
+            
+            Location = /path/to/chromedriver
 
 
 ## Improvements coming soon:
- - Extract the hardcoded setup values to a base configuration file. 
  - Incorporate openpyxl and extract all test data to spreadsheets.
  - Have the page objects handle the driver instance so that the step definitions are easily readable.
  - Finish the test cases and have it complete the scenario runs.
